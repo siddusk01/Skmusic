@@ -1,0 +1,162 @@
+<! DOCTYPE HTML>
+<html>
+<head><title>registration.in</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+     <style>
+         body 
+            {
+            background-image: url(photo-1618022325802-7e5e732d97a1.jpg);
+                background-size:cover;
+            }
+            .navigation-menu ul{
+                margin: 0px;
+                padding: 0px;
+            }
+            #ul-nb li a{
+                text-align: center;
+                padding: 10px;
+                width: 100px;     
+            }
+            ul{
+                padding: 0px;
+                overflow: hidden;
+                background-color:yellow;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                display: inline-block;
+                color:black;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color:crimson;
+                border: 0px solid yellow;
+                border-radius:50px;  
+            }
+            #navigation ul{
+                font-size:1em;
+            }
+            #navigation ul li{
+                display: inline;
+                 color: black;
+            }
+            #navigation li:not(:first-child):before{
+                content: " | ";
+            }
+            .navigation-menu{
+                border: 10px solid yellow;
+                border-radius: 50px; 
+                position: relative;
+            }
+            #navigation
+            {
+                animation:hello 8s infinite;
+            }
+            
+            @keyframes hello
+            {
+              50%
+                {
+                    transform: rotateX(40deg);
+                }
+            }
+            p
+            {
+                font-family: serif ;
+                position: relative;  
+                animation:mymove 30s infinite ;
+            }
+        @keyframes mymove
+            {
+              from
+                {
+                    left: 0px;
+                    top: 0px;
+                }
+                to
+                {
+                    left: 1350px;
+                }
+            }      
+        
+      </style>
+</head>
+<body class="container-fluid">
+  <div class="navigation-menu" style="margin-top: 10px">
+          <div id="navigation">
+            <ul>
+                <li><a href="MyWeb.html"><b>HOME</b></a></li>
+                <li><a href="register.html"><b>REGISTER</b></a></li>
+                <li><a href="login.html"><b>LOGIN</b></a></li>
+            </ul>
+              </div>
+        </div>       
+    <div class="card" style="width:600px;margin:auto;margin-top:15px;margin-right: 380px">
+    <h2 class="bg-Success  text-light card-header" style="font-family:inherit;text-align: center">Registration form</h2>
+    <form class="form">
+       
+    <table class="table table-hover table-striped">
+    
+    <tr>
+    <td><b>Name</b></td>
+    <td><input type="text" name="name" placeholder="Name"></td>
+    </tr>
+        
+    <tr>
+    <td><b>Email</b></td>
+    <td><input type="email" placeholder="Email" required pattern="[a-zA-Z#$%^&*0-9]+@[a-z]+.[a-z]{2,}$" title="abcd#$%12@gmail.com" style="font-size: 15"></td>  
+    </tr>    
+        
+    <tr>  
+    <td><b>Phone Number</b></td>
+    <td><input type="text" placeholder="Phone Number" style="font-size: 15" required pattern="^[6-9]{1}[0-9]{9}$" title="Enter valid Phone Number"></td>  
+    </tr>  
+        
+    <tr>
+    <td><b>Gender</b></td>
+    <td><input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female</td>
+    </tr>
+        
+    <tr>
+    <td><b>DOB</b></td>
+    <td><input type="date" name="dob"></td>
+    </tr>
+        
+    <tr>
+    <td><b>Password</b></td>
+    <td><input type="password" name="password" placeholder="Password" required  pattern="[a-zA-Z8%$0-9]{8,12}" title="password should contain Characters,numbers,special symbols"></td>
+    </tr>
+              
+    <tr>
+    <td><b>Address</b></td>
+    <td><textarea placeholder="Write address here"></textarea>        
+    </td>
+    </tr>
+        
+    <tr>
+    <td><button type="submit" class="btn btn-outline-success"><b>Submit</b></button></td>
+    <td><button type="reset" class="btn btn-outline-danger"><b>Reset</b></button></td>
+    </tr> 
+        
+    </table>
+    </form>
+         
+    
+  </div>     
+</body>
+</html>

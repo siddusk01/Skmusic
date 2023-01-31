@@ -1,0 +1,121 @@
+<! DOCTYPE HTML>
+<html>
+<head><title>registration.in</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+     <style>
+         body 
+            {
+            background-image: url(photo-1618022325802-7e5e732d97a1.jpg);
+                background-size:cover;
+            }
+            .navigation-menu ul{
+                margin: 0px;
+                padding: 0px;
+            }
+            #ul-nb li a{
+                text-align: center;
+                padding: 10px;
+                width: 100px;     
+            }
+            ul{
+                padding: 0px;
+                overflow: hidden;
+                background-color:yellow;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                display: inline-block;
+                color:black;
+                text-align: center;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color:crimson;
+                border: 0px solid yellow;
+                border-radius:50px;  
+            }
+            #navigation ul{
+                font-size:1em;
+            }
+            #navigation ul li{
+                display: inline;
+                 color: black;
+            }
+            #navigation li:not(:first-child):before{
+                content: " | ";
+            }
+            .navigation-menu{
+                border: 10px solid yellow;
+                border-radius: 50px; 
+                position: relative;
+            }
+            #navigation
+            {
+                animation:hello 8s infinite;
+            }
+            
+            @keyframes hello
+            {
+              50%
+                {
+                    transform: rotateX(40deg);
+                }
+            }
+        
+      </style>
+</head>
+<body class="container-fluid" style="margin-top: 10px">
+  <div class="navigation-menu">
+          <div id="navigation">
+            <ul>
+                <li><a href="MyWeb.html"><b>HOME</b></a></li>
+                <li><a href="register.html"><b>REGISTER</b></a></li>
+                <li><a href="login.html"><b>LOGIN</b></a></li>
+            </ul>
+              </div>
+        </div>      
+    <div class="card" style="width:600px;margin:auto;margin-top:80px;margin-right: 380px">
+    <h2 class="bg-danger text-light card-header" style="font-family:inherit;text-align: center">Login</h2>
+    <form class="form">
+       
+    <table class="table">
+    
+    <tr>
+    <td><b>Email</b></td>
+    <td><input type="email" placeholder="Email" required pattern="[a-zA-Z#$%^&*0-9]+@[a-z]+.[a-z]{2,}$" title="abcd#$%12@gmail.com" style="font-size: 15"></td>  
+    </tr>    
+        
+    
+    
+        
+    <tr>
+    <td><b>Password</b></td>
+    <td><input type="password" name="password" placeholder="Password" required  pattern="[a-zA-Z8%$0-9]{8,12}" title="password should contain Characters,numbers,special symbols"></td>
+    </tr>           
+    
+        
+    <tr>
+    <td><button type="submit" class="btn btn-outline-success" style="align-content: center"><b>Submit</b></button>&nbsp;&nbsp;&nbsp;
+   <td> <a href="register.html" style="color:white;font-size:20px;color: red;font-size: 15px"><b>Click here to Resigter!</b></a> </td>
+    </tr>
+        
+    </table>
+    </form>
+         
+     </div>
+       
+</body>
+</html>
